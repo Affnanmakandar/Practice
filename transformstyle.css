@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.container{
+    width:100%;
+    height:50vw;
+    justify-content: center;
+    align-items: center; 
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: skyblue;
+    
+    
+}
+.box{
+    width:220px;
+    height: 220px;
+    background-color: brown;
+    border: 2px solid black;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+    /* transition: all 3s linear 1s; */
+    box-shadow:17px 15px 8px black ;
+    animation-name: a;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+   /* border-radius: 52%; */
+    
+}
+@keyframes a {
+    0%{background-color: blue;}
+    /* 12%{background-color: black;}
+    33%{background-color: red;}
+    44%{background-color: greenyellow;}
+     */
+}
+.box:hover{
+    transform: rotate(180deg); 
+    /* transform: translateX(300px); */
+    /* transform: translate(200px); */
+    height:12px;
+    /* width: 12px; */
+    /* transition-property: linear; */
+    /* neeche aayega */
+    /* transform-box: 200px;
+     /* upper jaega*/ 
+     /* transform: translate(0px , -200px); */
+
+}
+#h1{
+    text-shadow: 2px  15px  3px  blue;
+    top: 20px;
+text-align: center;
+top: 200px;
+    
+}
+.circle{
+    width:220px;
+    height: 220px;
+    background-color: brown;
+    border: 2px solid black;
+     transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: none;
+    transition-delay: 0.5s; 
+    /* transition: all 3s linear 1s; */
+    box-shadow:17px 15px 8px black ;
+    animation-name: b;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.1s;
+   border-radius: 52%;
+   margin-right: 200px;
+   margin-left: 200px;
+   animation-direction: alternate-reverse;
+   animation-iteration-count: infinite;
+   position: relative;
+    
+}
+@keyframes b {
+    0%{background-color: blue; top:0px ;left:0px;}
+    12%{top:200px; left:15px;}
+    33%{left:200px; top: 300px;}
+    44%{background-color: greenyellow; top:209px; left:330px;}
+    48%{left:330px; top:209px;}
+    
+}
+/* .circle:hover{
+    /* transform: rotate(18deg);  */
+    /* transform: translateX(300px); */
+    /* transform: translate(200px); */
+   
+    /* transition-property: linear; */
+    /* neeche aayega */
+    /* transform-box: 200px;
+     /* upper jaega*/ 
+     /* transform: translate(0px , -200px); */
+     
+
+/* } */ 

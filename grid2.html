@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2.html</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+           height: 100vh;
+           width: 100vw;
+            background-color: aquamarine;
+            display: grid;
+           grid-template-rows: repeat(2,1fr);
+           grid-template-columns: repeat(3,1fr);
+           justify-self: start;
+           
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .item{
+            background-color: blue;
+            padding:1rem;
+            margin: 1rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+            </div>
+</body>
+</html>

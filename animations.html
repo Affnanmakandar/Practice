@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations </title>
+    <style>
+     *{
+        margin: 0;
+        padding:0;
+       box-sizing: border-box;
+     }  
+      .container{
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        border: 5px solid black;
+        
+      }
+    
+       
+        .box2{
+        width:200px;
+        height:200px;
+        background-color: gray;
+        border:2px solid  black;
+        margin-top: 4px;
+        padding-left: 2px;
+        animation-name: ex;
+        animation-duration: 7s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        margin-left: 50%;
+        /* animation-direction: alternate; */
+        }
+      @keyframes ex {
+        0%{background-color: blueviolet; top:0px; left:0px;}
+        25%{background-color: aqua; top: 0px; left:200px;}
+        75%{background-color: brown; left:200px; top:200px;}
+        100%{background-color: bisque; left:0px; top:0px;}
+      }  
+      /* movement position */
+      .circle{
+        width: 100px; 
+        height: 100px;
+        background-color: blue;
+        margin-left: 25%;
+        border-radius: 52%;
+        animation-name: position;
+        animation-duration: 10s;
+        position: relative;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+      }
+      @keyframes position{
+        0%{background-color: blueviolet; top:0px; left:0px;}
+        25%{background-color : blue; top:100px; left:50px;}
+        50%{background-color: black; top:0px; left:100px;}
+        60%{background-color: greenyellow; top:0px; left:8px;}
+      }
+#h2{
+    color: rgb(83, 46, 46);
+    text-shadow: 10px 15px 5px  brown;
+    justify-content: center;
+    padding: 2px;
+    margin-right: 2px;
+    right: 4px;
+    color:red;
+    padding-right: 2px;
+}
+.rectangle{
+    height:50px;
+    width:200px;
+    border:3px solid blue;
+    background-color: blueviolet;
+    border-radius: 2px;
+    margin:3px;
+animation-name: hello;
+animation-duration: 10s;
+position: relative;
+animation-iteration-count: infinite;
+animation-delay: 2s;
+animation-direction: alternate-reverse;
+align-items: center;
+justify-content: center;
+}
+    @keyframes hello{
+        0%{top:0px; left:100px;}
+        100%{top:10px;left:30%;}
+        
+       
+    } 
+    </style>
+</head>
+<body>
+      <div class="container"> 
+       <h2 id="h2" center:2px;> Animations </h2>
+   <div class="box"></div>
+   <div class="box2"></div>
+   <div class="circle"></div>
+   <div class="rectangle"></div>
+ </div> 
+</body>
+</html>
